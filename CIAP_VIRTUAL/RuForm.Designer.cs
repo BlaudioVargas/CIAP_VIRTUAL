@@ -57,7 +57,6 @@ namespace CIAP_VIRTUAL
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.ruSplash1 = new RuFramework.RuSplash();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -273,7 +272,7 @@ namespace CIAP_VIRTUAL
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(622, 329);
+            this.button1.Location = new System.Drawing.Point(619, 328);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(147, 23);
             this.button1.TabIndex = 4;
@@ -281,23 +280,12 @@ namespace CIAP_VIRTUAL
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(36, 329);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "SALIR";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // CIAP_VIRTUAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(825, 396);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ruSplash1);
             this.Controls.Add(this.statusStrip1);
@@ -342,6 +330,7 @@ namespace CIAP_VIRTUAL
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private RuFramework.RuSplash ruSplash1;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }
