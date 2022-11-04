@@ -440,5 +440,10 @@ namespace CIAP_VIRTUAL
             return rmObject.GetObject(Name, System.Threading.Thread.CurrentThread.CurrentCulture);
         }
         #endregion
+
+        private void CIAP_VIRTUAL_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

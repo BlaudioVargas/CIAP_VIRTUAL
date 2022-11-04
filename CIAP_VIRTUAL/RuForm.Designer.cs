@@ -260,7 +260,7 @@ namespace CIAP_VIRTUAL
             this.ruSplash1.CopyRight = "Copyright © My Company 2017";
             this.ruSplash1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ruSplash1.FontSize = 10F;
-            this.ruSplash1.Location = new System.Drawing.Point(144, 72);
+            this.ruSplash1.Location = new System.Drawing.Point(229, 121);
             this.ruSplash1.Margin = new System.Windows.Forms.Padding(5);
             this.ruSplash1.Name = "ruSplash1";
             this.ruSplash1.Size = new System.Drawing.Size(367, 154);
@@ -273,7 +273,7 @@ namespace CIAP_VIRTUAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(825, 396);
             this.Controls.Add(this.ruSplash1);
             this.Controls.Add(this.statusStrip1);
@@ -281,6 +281,7 @@ namespace CIAP_VIRTUAL
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "CIAP_VIRTUAL";
             this.Text = "CIAP_VIRTUAL";
+            this.Load += new System.EventHandler(this.CIAP_VIRTUAL_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
