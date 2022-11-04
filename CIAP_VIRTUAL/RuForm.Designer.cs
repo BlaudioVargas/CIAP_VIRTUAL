@@ -56,6 +56,7 @@ namespace CIAP_VIRTUAL
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.ruSplash1 = new RuFramework.RuSplash();
+            this.button3 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -270,12 +271,22 @@ namespace CIAP_VIRTUAL
             this.ruSplash1.UrlText = "TextDisigner CS Library";
             this.ruSplash1.Load += new System.EventHandler(this.ruSplash1_Load);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(559, 310);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(129, 23);
+            this.button3.TabIndex = 4;
+            this.button3.Text = "INICIAR SECION";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // CIAP_VIRTUAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(825, 396);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.ruSplash1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -321,6 +332,7 @@ namespace CIAP_VIRTUAL
         private RuFramework.RuSplash ruSplash1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
