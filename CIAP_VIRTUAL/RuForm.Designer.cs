@@ -29,6 +29,7 @@ namespace CIAP_VIRTUAL
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CIAP_VIRTUAL));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,8 +56,11 @@ namespace CIAP_VIRTUAL
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.button3 = new System.Windows.Forms.Button();
+            this.ruSplash1 = new RuFramework.RuSplash();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -67,7 +71,7 @@ namespace CIAP_VIRTUAL
             this.questionToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(825, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(640, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -237,9 +241,9 @@ namespace CIAP_VIRTUAL
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 374);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 529);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(825, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(640, 22);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -250,20 +254,52 @@ namespace CIAP_VIRTUAL
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(655, 219);
+            this.button3.Location = new System.Drawing.Point(397, 475);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(129, 23);
             this.button3.TabIndex = 4;
             this.button3.Text = "INICIAR SECION";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // ruSplash1
+            // 
+            this.ruSplash1.ApplicationName = "CIAP VIRTUAL";
+            this.ruSplash1.ApplicationVersion = "1.0.0.0";
+            this.ruSplash1.AsSplash = false;
+            this.ruSplash1.BackColor = System.Drawing.Color.Transparent;
+            this.ruSplash1.CanvasLayout = 80;
+            this.ruSplash1.CompanyImage = ((System.Drawing.Bitmap)(resources.GetObject("ruSplash1.CompanyImage")));
+            this.ruSplash1.CopyRight = "Copyright © My Company 2017";
+            this.ruSplash1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ruSplash1.FontSize = 20F;
+            this.ruSplash1.Location = new System.Drawing.Point(228, 88);
+            this.ruSplash1.Margin = new System.Windows.Forms.Padding(5);
+            this.ruSplash1.Name = "ruSplash1";
+            this.ruSplash1.Size = new System.Drawing.Size(367, 154);
+            this.ruSplash1.SplashSeconds = 1.5D;
+            this.ruSplash1.TabIndex = 3;
+            this.ruSplash1.Url = "https://www.codeproject.com/Articles/42529/Outline-Text";
+            this.ruSplash1.UrlText = "TextDisigner CS Library";
+            this.ruSplash1.Load += new System.EventHandler(this.ruSplash1_Load);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(69, 90);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(151, 152);
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
             // CIAP_VIRTUAL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(825, 396);
+            this.ClientSize = new System.Drawing.Size(640, 551);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
+            this.Controls.Add(this.ruSplash1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -274,6 +310,7 @@ namespace CIAP_VIRTUAL
             this.menuStrip1.PerformLayout();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,6 +343,8 @@ namespace CIAP_VIRTUAL
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button button3;
+        private RuFramework.RuSplash ruSplash1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
