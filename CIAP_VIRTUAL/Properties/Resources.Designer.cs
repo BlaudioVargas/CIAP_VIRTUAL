@@ -59,5 +59,15 @@ namespace CIAP_VIRTUAL.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_CIAP {
+            get {
+                object obj = ResourceManager.GetObject("logo_CIAP", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
