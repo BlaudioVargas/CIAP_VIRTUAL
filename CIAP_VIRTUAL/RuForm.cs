@@ -445,5 +445,10 @@ namespace CIAP_VIRTUAL
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
